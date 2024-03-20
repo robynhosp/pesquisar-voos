@@ -1,0 +1,75 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "slots": [],
+          "name": "HelloWorldIntent",
+          "samples": [
+            "olá",
+            "como vai você",
+            "diga oi mundo",
+            "diga oi",
+            "oi",
+            "diga olá mundo",
+            "diga olá"
+          ]
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "slots": [],
+          "name": "FlightNearIntent",
+          "samples": [
+            "qual o voo mais próximo",
+            "qual é este voo"
+          ]
+        },
+        {
+          "slots": [
+            {
+              "name": "name_company",
+              "type": "AMAZON.FirstName"
+            }
+          ],
+          "name": "CompanyCodeIntent",
+          "samples": [
+            "qual é o código da {name_company}"
+          ]
+        },
+        {
+          "slots": [
+            {
+              "name": "flight_code",
+              "type": "AMAZON.FirstName"
+            }
+          ],
+          "name": "SearchFlightIntent",
+          "samples": [
+            "Status do voo {flight_code}"
+          ]
+        }
+      ],
+      "types": [],
+      "invocationName": "pesquisar voos"
+    }
+  }
+}
